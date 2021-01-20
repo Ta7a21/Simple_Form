@@ -1,52 +1,58 @@
 <!DOCTYPE html>
 <html>
 
-<head> 
+<head>
     <title>
-
+        MSP Form
     </title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-<div class="form"><h1> MSP Form </h1>  </div>
-<div class="main"></div>
-<form>
+    <div class="form">
+        <h1> MSP Form </h1>
+    </div>
+    <div class="container">
+        <form action="welcome.html">
 
-    <div id="name">
-        <h2 class="name">Name</h2>
-        <input class="firstname" type="text" name="first_name"><br>
-        <label class="first lable">first name</label><br>
-        <input class="lasttname" type="text" name="last_name"><br>
-        <label class="last lable">last name</label><br>
+            <div id="name">
+                <label>Name</label>
+                <input class="first" type="text" name="first_name" placeholder="First Name" required>
+                <input class="last" type="text" name="last_name" placeholder="Last Name" required><br>
+            </div>
+            <br>
+            <label>email</label>
+            <input class="first" type="email" name="email" placeholder="youremail@gmail.com" required>
+            <br>
+            <br>
+            <label>Password</label>
+            <input class="first" type="password" name="password" required>
+            <br>
+            <br>
+            <label> Confirm Password</label>
+            <input class="first" type="password" name="check password" required>
+            <br>
+            <br>
+            <label> Gender</label>
+            <select class="first" style="font-size: 15px; padding: 5px;" name="Gender" required>
+
+                <option disabled="disabled" selected="selected">Choose your gender</option>
+                <option> Male</option>
+                <option>Female</option>
+            </select><br><br>
+            <label>Phone Number</label>
+            <input class="code" type="text" name="area_code" placeholder="+20" required>
+            <input class="last" type="text" name="phone" placeholder="1XXXXXXXXX" required>
+            <br>
+            <br>
+            <hr style="width:50%;text-align:left;margin-left:0;">
+            <a href="welcome.html"> <input class="submit" type="submit" value="Submit Form" /></a>
+
+
+
+        </form>
     </div>
 
-    <h2 class="name">E-mail</h2>
-    <input class="email" type="text" name="email">
-
-    <h2 class="name">Password</h2>
-    <input class="password" type="text" name="password">
-
-    <h2 class="name"> check Password</h2>
-    <input class="password" type="text" name="check password">
-
-    <h2 class="name">phone number</h2>
-    <input class="code" type="text" name="area_code">
-    <label class="area_code">area code </label><br><br>
-    <input class="number" type="text" name="phone">
-    <label class="phone number"> Phone Number</label>
-
-    <h2 class="name"> Gender</h2>
-    <select class="choies" name="Gender">
-
-        <option disabled="disabled" selected="selected">Gender</option>
-        <option> Male</option>
-        <option >Fmale</option>
-    </select>
-    <input type="button" value="Submit" onclick="window.location.href='https://www.Facebook.com';" value="Facebook" />
-
-
-
-</form>
-
 </body>
+
 </html>
