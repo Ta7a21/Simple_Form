@@ -44,7 +44,7 @@ label {
   height: 20.5px;
 }
 
-.submit {
+.submit:valid {
   font-size: 20px;
   border-color: white;
   border-style: solid;
@@ -59,4 +59,15 @@ label {
 .submit:hover {
   background-color: white;
   color: black;
+}
+input:invalid:required {
+  border-color: red;
+  border-style: solid;
+  border-width: 1.5px;
+}
+
+input:valid {
+  border-color: greenyellow;
+  border-style: solid;
+  border-width: 0.5px;
 }
